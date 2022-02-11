@@ -30,7 +30,7 @@ export default (): Router => {
   const app = Router();
   app.get('/animals/:name', async (req: Request, res: Response) => {
     try {
-      if (!req.params.name) res.sendStatus(404);
+      if (!req.params.name) return res.sendStatus(404);
       if (req.params.name === 'all') {
         const data = await (await db()).collection('animals').find({}).toArray();
         res.send(data);
@@ -48,8 +48,9 @@ export default (): Router => {
     try {
       const file = req.file;
       if (!file) {
+        res.send('Add image');
         unlinkFile(file.path);
-        return res.send('Add image');
+        return;
       }
       console.log(file);
       const fileStream = fs.createReadStream(file.path);
@@ -71,8 +72,10 @@ export default (): Router => {
         !req.body.description ||
         !req.body.age
       ) {
+        res.send('Please enteer name,type, typeInEng, price, and description');
         unlinkFile(file.path);
-        return res.send('Please enteer name,type, typeInEng, price, and description');
+
+        return;
       }
       await (await db()).collection('animals').insertOne({
         image: url,
@@ -84,8 +87,8 @@ export default (): Router => {
         age: req.body.age,
       });
       await (await s3).upload(uploadParams).promise();
-      unlinkFile(file.path);
       res.sendStatus(200);
+      unlinkFile(file.path);
     } catch (err) {
       console.log(err);
       res.sendStatus(err.status || 500);
