@@ -327,6 +327,7 @@ section {
 
 .about .image img {
   width: 100%;
+  border-radius: 6%;
 }
 
 .about .content {
@@ -351,8 +352,8 @@ section {
   line-height: 2;
 }
 
-.dog-food,
-.cat-food {
+.buy-cow,
+.buy-buffalo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,20 +365,20 @@ section {
   padding: 2rem 0;
 }
 
-.dog-food .image,
-.cat-food .image {
+.buy-cow .image,
+.buy-buffalo .image {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 40rem;
   flex: 1 1 40rem;
 }
 
-.dog-food .image img,
-.cat-food .image img {
+.buy-cow .image img,
+.buy-buffalo .image img {
   width: 100%;
 }
 
-.dog-food .content,
-.cat-food .content {
+.buy-cow .content,
+.buy-buffalo .content {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 40rem;
   flex: 1 1 40rem;
@@ -385,45 +386,45 @@ section {
   padding: 2rem;
 }
 
-.dog-food .content h3,
-.cat-food .content h3 {
+.buy-cow .content h3,
+.buy-buffalo .content h3 {
   font-size: 3.5rem;
   color: #130f40;
 }
 
-.dog-food .content h3 span,
-.cat-food .content h3 span {
+.buy-cow .content h3 span,
+.buy-buffalo .content h3 span {
   color: #e67e22;
 }
 
-.dog-food .content p,
-.cat-food .content p {
+.buy-cow .content p,
+.buy-buffalo .content p {
   padding: 1rem 0;
   line-height: 2;
   color: #666;
   font-size: 1.6rem;
 }
 
-.dog-food .content .amount,
-.cat-food .content .amount {
+.buy-cow .content .amount,
+.buy-buffalo .content .amount {
   font-size: 3.5rem;
   color: #130f40;
   padding: 0.5rem 0;
 }
 
-.dog-food .content a img,
-.cat-food .content a img {
+.buy-cow .content a img,
+.buy-buffalo .content a img {
   height: 15rem;
   margin-top: 1rem;
 }
 
-.dog-food .content a:hover img,
-.cat-food .content a:hover img {
+.buy-cow .content a:hover img,
+.buy-buffalo .content a:hover img {
   -webkit-transform: rotate(15deg);
   transform: rotate(15deg);
 }
 
-.cat-food {
+.buy-buffalo {
   -ms-flex-wrap: wrap-reverse;
   flex-wrap: wrap-reverse;
 }
@@ -546,7 +547,7 @@ section {
   padding: 1rem 0;
 }
 
-.plan .box-container {
+/* .plan .box-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(30rem, 1fr)) [auto-fit];
@@ -619,7 +620,7 @@ section {
 
 .plan .box-container .box .amount span {
   font-size: 3rem;
-}
+} */
 
 .contact {
   padding: 2rem 0;
@@ -642,6 +643,7 @@ section {
 
 .contact .image img {
   width: 100%;
+  border-radius: 8%;
 }
 
 .contact form {
