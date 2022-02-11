@@ -22,7 +22,8 @@
         "express": "^4.17.1",
         "helmet": "^4.1.1",
         "mongodb": "^3.6.2",
-        "winston": "^3.3.3"
+        "winston": "^3.3.3",
+        "yup": "^0.32.11"
     },
     "author": "Shashank",
     "license": "MIT"

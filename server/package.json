@@ -5,7 +5,7 @@
     "start": "node build/index.js",
     "build": "tsc",
     "lint": "eslint . --ext .ts",
-    "dev": "tsc-watch --onSuccess 'node ./build/index.js'"
+    "dev": "npx tsc-watch --onSuccess \"node ./build/index.js\""
   },
   "devDependencies": {
     "@types/express": "^4.17.8",
