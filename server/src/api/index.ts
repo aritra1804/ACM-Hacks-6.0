@@ -49,7 +49,6 @@ export default (): Router => {
       const file = req.file;
       if (!file) {
         res.send('Add image');
-        unlinkFile(file.path);
         return;
       }
       console.log(file);
