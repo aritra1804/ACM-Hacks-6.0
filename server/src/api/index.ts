@@ -28,9 +28,10 @@ const unlinkFile = util.promisify(fs.unlink);
 
 export default (): Router => {
   const app = Router();
+
   app.get('/animals/:name', async (req: Request, res: Response) => {
     try {
-      if (!req.params.name) return res.sendStatus(404);
+      if (!req.params.name) throw { status: 404, message: 'param missing' };
       if (req.params.name === 'all') {
         const data = await (await db()).collection('animals').find({}).toArray();
         res.send(data);
@@ -40,7 +41,7 @@ export default (): Router => {
       res.send(data);
     } catch (err) {
       console.log(err);
-      res.sendStatus(err.status || 500);
+      res.status(err.status || 500).json({ success: false, message: err.message || 'Internal Server Error' });
     }
   });
 
@@ -48,10 +49,8 @@ export default (): Router => {
     try {
       const file = req.file;
       if (!file) {
-        res.send('Add image');
-        return;
+        throw { status: 404, message: 'File missing, add and upload a file' };
       }
-      console.log(file);
       const fileStream = fs.createReadStream(file.path);
       const uid = nanoid();
       const uploadParams = {
@@ -62,7 +61,6 @@ export default (): Router => {
         ACL: 'public-read',
       };
       const url = `https://mechenzie.s3.ap-south-1.amazonaws.com/acm/${uid}`;
-      console.log(url);
       if (
         !req.body.type ||
         !req.body.typeInEng ||
@@ -71,10 +69,8 @@ export default (): Router => {
         !req.body.description ||
         !req.body.age
       ) {
-        res.send('Please enteer name,type, typeInEng, price, and description');
         unlinkFile(file.path);
-
-        return;
+        throw { status: 422, message: 'Add type, typeInEng, name, price, description, and Age' };
       }
       await (await db()).collection('animals').insertOne({
         image: url,
@@ -86,11 +82,19 @@ export default (): Router => {
         age: req.body.age,
       });
       await (await s3).upload(uploadParams).promise();
-      res.sendStatus(200);
+      res.status(201).json({
+        image: url,
+        name: req.body.name,
+        type: req.body.type,
+        typeInEng: req.body.typeInEng,
+        price: req.body.price,
+        description: req.body.description,
+        age: req.body.age,
+      });
       unlinkFile(file.path);
     } catch (err) {
       console.log(err);
-      res.sendStatus(err.status || 500);
+      res.status(err.status || 500).json({ success: false, message: err.message || 'Internal Server Error' });
     }
   });
 
