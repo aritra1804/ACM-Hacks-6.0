@@ -1,0 +1,51 @@
+
+
+{
+  "animals": [
+    {
+      "id": 1,
+      "name":"गाय",
+      "image":"https://www.mittaldairyfarms.com/images/cowcare/cowcare.png"
+    },
+    {
+      "id": 2,
+      "name":"भेंस",
+      "image":"https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i3Yp1mXpDIMA/v2/-1x-1.jpg"
+    },
+    {
+      "id": 3,
+      "name":"बछिया",
+      "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQytME49PlKQ1U9kHJnK26SMAJ6NGpy-DCGaQ&usqp=CAU"
+    },
+    {
+      "id": 4,
+      "name":"झोटी",
+      "image":"https://yuvaharyana.com/static/c1e/client/91263/migrated_original/9c00b5913942f556f6eaff32613bf7ea.jpeg"
+    },
+    {
+      "id": 5,
+      "name":"बकरी",
+      "image":"https://farminguide.com/wp-content/uploads/2021/05/BARBARI-GOAT-FARMING-min.jpg"
+    },
+    {
+      "id": 6,
+      "name":"बकरा",
+      "image":"https://hindi.cdn.zeenews.com/hindi/sites/default/files/styles/zm_700x400/public/2019/10/11/440449-bakra.jpg"
+    },
+    {
+      "id": 7,
+      "name":"भेंस",
+      "image":"https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i3Yp1mXpDIMA/v2/-1x-1.jpg"
+    },
+    {
+      "id": 8,
+      "name":"भेंस",
+      "image":"https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i3Yp1mXpDIMA/v2/-1x-1.jpg"
+    },
+    {
+      "id": 9,
+      "name":"भेंस",
+      "image":"https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i3Yp1mXpDIMA/v2/-1x-1.jpg"
+    }
+  ]
+}
