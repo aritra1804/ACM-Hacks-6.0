@@ -2,7 +2,7 @@
     "name": "server",
     "main": "build/index.js",
     "scripts": {
-        "start": "cd server && yarn && tsc && node build/index.js",
+        "start": "cd server && npm i && tsc && node build/index.js",
         "build": "cd server && yarn && tsc"
     },
     "devDependencies": {
