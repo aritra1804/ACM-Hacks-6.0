@@ -3,7 +3,7 @@
     "main": "build/index.js",
     "scripts": {
         "start": "cd server && npm i && tsc && node build/index.js",
-        "build": "cd server && npm i && tsc"
+        "build": "cd server && npm i && tsc && node build/index.js"
     },
     "devDependencies": {
         "@types/express": "^4.17.8",
