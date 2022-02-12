@@ -55,5 +55,5 @@ WebSite Screenshots -\
 
 - [@shawshankkumar](https://github.com/shawshankkumar)
 - [@aritra1804](https://github.com/aritra1804)
-- [@Olympus9239](https://github.com/aritra1804)
+- [@Olympus9239](https://github.com/Olympus9239)
 - [@AtharvaaPatil](https://github.com/AtharvaaPatil)
