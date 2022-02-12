@@ -56,7 +56,7 @@ WebSite Screenshots -\
 
 **App Menu-**
 
-![App Screenshot](https://user-images.githubusercontent.com/71871835/153714374-33d29e32-e35a-4dcd-ad0a-9da0f0a57a6b.png)
+![App Screenshot](https://user-images.githubusercontent.com/71871835/153718984-61e5efef-d44d-4268-b8c5-3f7b85839ab8.png)
 
 
 ## Authors
