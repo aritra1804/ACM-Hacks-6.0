@@ -33,7 +33,7 @@ Farmers in India buy and sell cattle and poultry on a daily basis but have to do
 
 ## Tech Stack
 
-**Client:** HTML, JavaScript, CSS, 
+**Client:** HTML, CSS, Javascript 
 
 **Server:** Node, MongoDB, AWS S3, Typescript
 
