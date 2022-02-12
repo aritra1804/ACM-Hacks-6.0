@@ -51,7 +51,15 @@ async function fetchData() {
             </div>
             <div class="content">
                 <h3>${element.name}</h3>
-                <div class="amount">$${element.price}</div>
+                <h2>Age: ${element.age} &nbsp;Type: ${element.type} (${
+                        element.typeInEng
+                    })</h2><br>
+                            
+                                 <p1>${element.description.substring(
+                                     0,
+                                     250
+                                 )}...</p1><br>
+                <div class="amount">₹${element.price}</div>
             </div>
         </div>`;
                     entireData += animalData;
