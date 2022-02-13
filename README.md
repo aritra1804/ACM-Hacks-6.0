@@ -1,3 +1,5 @@
+![App logo](https://user-images.githubusercontent.com/71871835/153745086-254b5db4-147b-4392-a083-4473288eb6c0.png)
+
 # Animal Mandi - by Team Misfits
 
 Streamlining the buying and selling of cattle. An integrated system of a website and a mobile application.
