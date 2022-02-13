@@ -58,7 +58,10 @@ WebSite Screenshots -\
 
 ![App Screenshot](https://user-images.githubusercontent.com/71871835/153744753-84a8d48a-1072-4a9f-94aa-3096fe1ad19c.png)
 
-
+ ## **App Demo-**
+ 
+ 
+![App Screenshot](https://user-images.githubusercontent.com/71871835/153744876-1efedd41-876b-48c6-ab0f-54d544072982.mp4)
 ## Authors
 
 - [@shawshankkumar](https://github.com/shawshankkumar)
